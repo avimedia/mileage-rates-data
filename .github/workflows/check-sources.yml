@@ -1,0 +1,29 @@
+name: Check for next year's rates
+on:
+  schedule:
+    # Mondays at 07:00 UTC, October to February.
+    - cron: '0 7 * 10-12,1-2 1'
+  workflow_dispatch: {}
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Look for new rates on the official pages
+        id: check
+        run: |
+          python3 scripts/check_sources.py | tee report.txt
+          echo "found=$([ -s report.txt ] && echo true || echo false)" >> "$GITHUB_OUTPUT"
+      - name: Open an issue
+        if: steps.check.outputs.found == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TITLE="New mileage rates may be published"
+          if gh issue list --state open --search "in:title \"$TITLE\"" --json title --jq '.[].title' | grep -qxF "$TITLE"; then exit 0; fi
+          gh issue create --title "$TITLE" --body "$(cat report.txt)
+
+          Add the new entries to docs/MileageRates.json (see README), then copy the file into the app."

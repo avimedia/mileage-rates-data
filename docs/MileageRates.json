@@ -1,0 +1,67 @@
+{
+  "rates": [
+    {
+      "region": "NO",
+      "validFrom": "2024-01-01",
+      "currencyCode": "NOK",
+      "allowancePerKm": 4.9,
+      "deductionPerKm": 3.5,
+      "passengerPerKm": 1.0,
+      "source": "https://www.skatteetaten.no/satser/bilgodtgjorelse-kilometergodtgjorelse/"
+    },
+    {
+      "region": "NO",
+      "validFrom": "2025-01-01",
+      "currencyCode": "NOK",
+      "allowancePerKm": 5.0,
+      "deductionPerKm": 3.5,
+      "passengerPerKm": 1.0,
+      "source": "https://www.skatteetaten.no/satser/bilgodtgjorelse-kilometergodtgjorelse/"
+    },
+    {
+      "region": "NO",
+      "validFrom": "2026-01-01",
+      "currencyCode": "NOK",
+      "allowancePerKm": 5.3,
+      "deductionPerKm": 3.5,
+      "passengerPerKm": 1.0,
+      "source": "https://www.skatteetaten.no/satser/bilgodtgjorelse-kilometergodtgjorelse/"
+    },
+    {
+      "region": "SE",
+      "validFrom": "2025-01-01",
+      "currencyCode": "SEK",
+      "allowancePerKm": 2.5,
+      "deductionPerKm": 2.5,
+      "source": "https://www.skatteverket.se/privat/skatter/beloppochprocent/2025.4.262c54c219391f2e96342eb.html"
+    },
+    {
+      "region": "SE",
+      "validFrom": "2026-01-01",
+      "currencyCode": "SEK",
+      "allowancePerKm": 2.5,
+      "deductionPerKm": 2.5,
+      "source": "https://www.skatteverket.se/privat/skatter/beloppochprocent/2026.4.1522bf3f19aea8075ba21.html"
+    },
+    {
+      "region": "DK",
+      "validFrom": "2025-01-01",
+      "currencyCode": "DKK",
+      "allowancePerKm": 3.81,
+      "deductionPerKm": 3.81,
+      "upperTierFromKm": 20000,
+      "upperTierPerKm": 2.23,
+      "source": "https://skat.dk/en-us/businesses/employees-and-pay/transport-allowance/taxable-and-tax-free-transport-allowance"
+    },
+    {
+      "region": "DK",
+      "validFrom": "2026-01-01",
+      "currencyCode": "DKK",
+      "allowancePerKm": 3.94,
+      "deductionPerKm": 3.94,
+      "upperTierFromKm": 20000,
+      "upperTierPerKm": 2.28,
+      "source": "https://skat.dk/en-us/businesses/employees-and-pay/transport-allowance/taxable-and-tax-free-transport-allowance"
+    }
+  ]
+}
