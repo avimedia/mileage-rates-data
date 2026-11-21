@@ -62,6 +62,16 @@
       "upperTierFromKm": 20000,
       "upperTierPerKm": 2.28,
       "source": "https://skat.dk/en-us/businesses/employees-and-pay/transport-allowance/taxable-and-tax-free-transport-allowance"
+    },
+    {
+      "region": "DK",
+      "validFrom": "2027-01-01",
+      "currencyCode": "DKK",
+      "allowancePerKm": 4.13,
+      "deductionPerKm": 4.13,
+      "upperTierFromKm": 20000,
+      "upperTierPerKm": 2.44,
+      "source": "https://sktst.dk/nyheder-og-pressemeddelelser/skatteraadet-fastsaetter-satser-for-koersel-i-2027"
     }
   ]
 }
